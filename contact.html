@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Anna Makarets</title>
+  <meta name="description" content="Contact Anna Makarets">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h2 class="logo">Anna Makarets</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="brand.html">Flower Brand</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Contact</h1>
+
+    <div class="contact-layout">
+      <div class="box">
+        <p><strong>Name:</strong> Anna Makarets</p>
+        <p><strong>Email:</strong> annamakarets7@gmail.com</p>
+        <p><strong>Phone:</strong> 0892684076</p>
+        <p><strong>Proposed domain:</strong> makflowers.ie</p>
+        <img src="images/contact-flower.jpg" alt="Flowers" class="contact-photo">
+      </div>
+
+      <form class="contact-form" onsubmit="return submitForm()">
+        <label for="name">Your name</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Your email</label>
+        <input id="email" type="email" required>
+
+        <label for="phone">Phone number</label>
+        <input id="phone" type="tel" required>
+
+        <label for="bouquet">Bouquet type</label>
+        <select id="bouquet" required>
+          <option value="">Choose one</option>
+          <option>Bouquet</option>
+          <option>Gift Box</option>
+          <option>Event Flowers</option>
+        </select>
+
+        <label for="date">Event date</label>
+        <input id="date" type="date">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+
+        <button type="submit">Send enquiry</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
